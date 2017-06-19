@@ -1,0 +1,71 @@
+\documentclass{article}
+
+\begin{document}
+On a two-dimensional plane (\(x,y\)), two initial points lie on the same continuous line, vertical, horizontal, or diagonal.\\
+You are given a series of two \(x,y\) points, each two points forming a new line on the same plane. For every newly-formed line, find out if it intersects with the original line.
+
+\vspace{5mm}
+
+\textbf{Input Format}
+
+\vspace{5mm}
+
+The first and second lines contain two space-separated integers denoting the values for the two initial \(x,y\) points, marking the original line.\\
+The third line contains one integer, \(T\), the number of test cases.\\
+Each test case consists of two lines, every line being a new \(x,y\) point, marking the new line.
+
+\vspace{5mm}
+
+\textbf{Constraints}
+
+\vspace{5mm}
+
+\(1 ≤ T ≤ 10\)\\
+\(-10^4 ≤ x,y,z ≤ 10^4\)\\
+
+\vspace{5mm}
+
+\textbf{Output Format}
+
+\vspace{5mm}
+
+For every test case, print out NO if the newly-formed line does not intersect with the original line.\\
+Print out YES if the newly-formed line does.
+
+\vspace{5mm}
+
+\textbf{Sample Input}
+
+\vspace{5mm}
+
+0 4\\
+0 -4\\
+2\\
+1 3\\
+1 -3\\
+4 2\\
+-4 -2\\
+
+\vspace{5mm}
+
+\textbf{Sample Output}
+
+\vspace{5mm}
+
+NO\\
+YES
+
+\vspace{5mm}
+
+\textbf{Explanation}
+
+\vspace{5mm}
+
+Initial points, (0,4) and (0,-4), form a vertical line along the \(y\)-axis.
+
+\begin{enumerate}
+  \item In the first test case, the two given points, (1,3) and (1,-3), form a vertical line along \(x\) = 1. Since the initial line is also a vertical line, they do not cross.
+  \item In the second test case, the two given points, (4,2) and (-4,-2), form a diagonal line across quadrant III and quadrant I of the \(x,y\) plane. The new line traverses through the point of origin (0,0), thus crossing through the original line as well.
+\end{enumerate}
+
+\end{document}
