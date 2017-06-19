@@ -1,0 +1,10 @@
+Problem #1 - Beginner - Pseudocode
+
+calculate slope from two original points
+
+loop through test cases:
+    calculate slope from two points
+    if new slope equals original slope:
+        print NO
+    else:
+        print YES
